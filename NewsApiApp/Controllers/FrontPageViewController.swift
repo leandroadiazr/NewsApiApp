@@ -21,7 +21,7 @@ class FrontPageViewController: UIViewController {
         getNews(page: page)
     }
     
-    private func configureNavBar() {        
+    private func configureNavBar() {
         self.navigationController?.navigationBar.isTranslucent = false
         let menuBtn = UIButton(type: .custom)
         menuBtn.setImage(UIImage(systemName: "lineweight"), for: .normal)
@@ -88,8 +88,12 @@ extension FrontPageViewController: UITableViewDelegate, UITableViewDataSource, U
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         for index in indexPaths {
             if index.row > articles.count {
+                //in a different situation would update the articles.count - 3
+                //to fetch a new page when the scrolling get to the last 3 items
+                //here not needed because im reaching the End of File with the first netCall,
+                //this helps with smooth scrolling on larger files
+                //no used to leave coments unless strictly necessary
                 getNews(page: page)
-                print(page)
             }
         }
     }
@@ -138,7 +142,6 @@ extension FrontPageViewController: UITableViewDelegate, UITableViewDataSource, U
             configureNavBar()
         }
     }
-    
 }
 
 

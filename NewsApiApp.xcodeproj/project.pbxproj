@@ -127,8 +127,7 @@
 				0328369326BA40CC00DBE36B /* Managers */,
 				0328368226BA40CB00DBE36B /* Models */,
 				0328369526BA40CC00DBE36B /* Utilities */,
-				0328365226BA40A300DBE36B /* AppDelegate.swift */,
-				0328365426BA40A300DBE36B /* SceneDelegate.swift */,
+				E8E8EB1626BACD2B003337A2 /* Support */,
 				0328365B26BA40A400DBE36B /* Assets.xcassets */,
 				0328365D26BA40A400DBE36B /* LaunchScreen.storyboard */,
 				0328366026BA40A400DBE36B /* Info.plist */,
@@ -231,6 +230,15 @@
 				0328369726BA40CC00DBE36B /* Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E8E8EB1626BACD2B003337A2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0328365226BA40A300DBE36B /* AppDelegate.swift */,
+				0328365426BA40A300DBE36B /* SceneDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
